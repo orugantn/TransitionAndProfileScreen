@@ -31,6 +31,7 @@ class Activity1 : AppCompatActivity() {
         imgSource.setOnClickListener {
             // Construct an Intent as normal
             // Construct an Intent as normal
+            //SDKasld;k
             val intent = Intent(this, Activity2::class.java)
             intent.putExtra(EXTRA_PARAM_ID, 123)
 
