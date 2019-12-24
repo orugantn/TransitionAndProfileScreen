@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".Activity1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.example.android.activityscenetransitionbasic.SquareFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgSource"
+                android:src="@drawable/full"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"/>
+        </com.example.android.activityscenetransitionbasic.SquareFrameLayout>
+
+        <TextView
+            android:id="@+id/txtThumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="full"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+</RelativeLayout>
